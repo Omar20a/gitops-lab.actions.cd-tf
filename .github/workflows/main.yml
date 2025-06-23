@@ -1,0 +1,16 @@
+name: 'Terraform'
+ 
+on:
+  # push:
+  #   branches: [ main ]
+  #   paths: [deployVM.tf, .github/workflows/terraform.yml] 
+  workflow_dispatch:
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v4
