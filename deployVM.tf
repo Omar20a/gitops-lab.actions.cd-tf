@@ -9,15 +9,15 @@ terraform {
   }
 
   backend "azurerm" {
-        storage_account_name = "YOUR_STORAGEACCOUNT_NAME_HERE"
-        container_name = "terraform"
-        key = "terraform.tfstate"
-        access_key = "YOUR_STORAGE_ACCOUNT_KEY_HERE"
+      storage_account_name = "salab20250623"
+      container_name = "terraform"
+      key = "terraform.tfstate"
+      access_key = "ctAvGoLGezZdlqUKn264oyodBJzMUsrt1ZNs+rCKj9phT6GhBFY1eB91EEetI7J+FJBc5MrwJCoB+AStC7h7Tw=="
     }
 }
 
 provider "azurerm" {
-  subscription_id = "YOUR_SUBSCRIPTION_HERE"
+  subscription_id = "9caa52dc-74c6-46e5-a24b-7117242da753"
   features {
   }
 }
